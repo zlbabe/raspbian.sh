@@ -183,7 +183,7 @@ function download_raspbian() {
 	if [ ! -f .cache/raspbian.img ]; then
 		echo "Downloading ..."
         	wget -O .cache/raspbian.zip -q --show-progress https://downloads.raspberrypi.org/raspbian_lite_latest
-        	unzip .cache/raspbian.zip -d .cache/
+        	unzip .cache/raspbian.zip -d .cache/ > /dev/null
         	mv .cache/*.img .cache/raspbian.img
         	rm .cache/*.zip
 		echo "The image is saved in ./cache/raspbian.img"
