@@ -25,7 +25,7 @@ Customize a specific raspbian image
 $ raspbian.sh -c -p /path/to/raspbian.img
 
 Install raspbian on an sdcard
-$ raspbian.sh -p /path/to/raspbian.img -b /dev/mmcblk0
+$ raspbian.sh -i -p /path/to/raspbian.img -b /dev/mmcblk0
 ```
 
 ## License
